@@ -61,3 +61,7 @@ The Story Galaxy entry has been removed from visible navigation. Emotional Garde
 ## Latest interface cleanup
 
 Life Tapestry and its navigation entry are removed from application code. The garden's trailing coverage sentence is removed from the visible list at the user's request. Coverage and pending-review information remain available in source notes and the methodology; annotations are unchanged. Film marks are fixed to Size 3 / Solid.
+
+## Five-button navigation revision
+
+The progress slider and small chart instructions are removed. Five larger bordered buttons, numbered 1–5, provide clear hover, focus and active states. Buttons 1–4 trigger the same animated continuous geometry changes; button 5 scrolls to the garden list below, now labelled 05. Browser checks confirmed zero sliders, five navigation buttons, river activation and garden navigation. The production build passes.
