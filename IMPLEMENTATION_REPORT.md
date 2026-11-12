@@ -87,3 +87,7 @@ Browser QA confirmed 95 cards, a single Inside Out flip, keyboard Space returnin
 Tunnel decade labels now follow the same year-dependent depth and angle as film marks, with short leader lines and readable text backing. Labels interpolate to the existing radial-disc positions, which are unchanged. A ninth test checks the unchanged disc coordinates and bounded tunnel-label offsets.
 
 The poster gallery sorts partially theme-coded films first, chronologically within each group. Up, Inside Out and Turning Red initially show their flower backs, while neighbouring cards show posters. All flips remain user-controlled afterwards. Browser QA confirmed the first ten entries are the ten annotated films and three cards start on their flower side. Main-view navigation scrolls back to the full atlas so the chart's top stays visible.
+
+## Featured posters with full archive expansion
+
+The default gallery shows only the ten partially theme-coded films. “Browse all 95 films” replaces that compact selection with the entire archive at once, without pagination. Local studio/decade filters narrow the archive, and a return control restores the featured ten. This implements the user's correction to the initial pagination proposal; no paging UI is retained. Browser checks confirmed 10 featured cards, 95 expanded cards, zero pagination elements, 31 Pixar matches and return to 10. Twelve tests and the production build pass.

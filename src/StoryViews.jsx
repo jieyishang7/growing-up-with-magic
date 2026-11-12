@@ -2,6 +2,7 @@ import React,{useEffect,useMemo,useRef,useState} from 'react';
 import * as d3 from 'd3';
 import {themeNames,themeColor} from './model.js';
 import {Poster,posters} from './Posters.jsx';
+import {gallerySelection} from './galleryModel.js';
 import {riverLayout,galaxyLayout,timeDomain} from './storyLayouts.js';
 export const storyViews=[['river','Emotion River'],['galaxy','Story Galaxy'],['garden','Emotional Garden']];
 export const viewNotes={river:'Each strand connects recorded appearances of one theme across release years. No audience change is inferred.',galaxy:'Film–theme links show documented membership. Drag to rearrange; scroll to zoom.',garden:'Each fixed petal position is one theme. Filled petals mean documented presence, not intensity.'};
@@ -27,4 +28,13 @@ function FlipFilmCard({f,selected,setSelected,onEvidence}){
  {posters[f.id]&&<a className="poster-credit" href={posters[f.id].source} target="_blank" rel="noreferrer">Poster © {posters[f.id].credit} · source ↗</a>}
  <button className="garden-evidence" onClick={e=>onEvidence(f.id,e.currentTarget)}>Evidence ↗</button></article>;
 }
-export function GardenGallery({films,selected,setSelected,onEvidence}){const ordered=[...films].sort((a,b)=>Number(b.themes.length>0)-Number(a.themes.length>0)||a.year-b.year||a.id.localeCompare(b.id));return <div className="garden-gallery">{ordered.map(f=><FlipFilmCard key={f.id} f={f} selected={selected} setSelected={setSelected} onEvidence={onEvidence}/>)}{!films.length&&<p>No films match the current filters.</p>}</div>;}
+export function GardenGallery({films,selected,setSelected,onEvidence}){
+ const [expanded,setExpanded]=useState(false),[studio,setStudio]=useState('All studios'),[decade,setDecade]=useState('All decades');const container=useRef();
+ const result=gallerySelection(films,{expanded,studio,decade});
+ const browse=()=>{setExpanded(true);container.current?.scrollIntoView({behavior:'smooth',block:'start'});};
+ return <div className="garden-browser" ref={container}>
+ {expanded&&<div className="gallery-toolbar"><div><span className="eyebrow">THE FILM ARCHIVE</span><p>{result.total} films</p></div><label>Studio<select aria-label="Poster studio" value={studio} onChange={e=>{setStudio(e.target.value);}}>{['All studios','Disney Animation','Pixar'].map(s=><option key={s}>{s}</option>)}</select></label><label>Decade<select aria-label="Poster decade" value={decade} onChange={e=>{setDecade(e.target.value);}}><option>All decades</option>{Array.from({length:10},(_,i)=>1930+i*10).map(y=><option key={y} value={y}>{y}s</option>)}</select></label><button className="gallery-featured" onClick={()=>{setExpanded(false);setStudio('All studios');setDecade('All decades');container.current?.scrollIntoView({behavior:'smooth',block:'start'});}}>Back to featured stories</button></div>}
+ <div className="garden-gallery">{result.items.map(f=><FlipFilmCard key={f.id} f={f} selected={selected} setSelected={setSelected} onEvidence={onEvidence}/>)}{!result.items.length&&<p>No films match these filters.</p>}</div>
+ {!expanded?<div className="gallery-more"><button className="browse-all-films" onClick={browse}>Browse all {films.length} films</button></div>:<div className="gallery-more"><button className="browse-all-films" onClick={()=>{setExpanded(false);setStudio('All studios');setDecade('All decades');container.current?.scrollIntoView({behavior:'smooth',block:'start'});}}>Show featured stories only</button></div>}
+ </div>;
+}
