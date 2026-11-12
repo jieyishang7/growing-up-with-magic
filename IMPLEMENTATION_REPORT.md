@@ -69,3 +69,15 @@ The progress slider and small chart instructions are removed. Five larger border
 ## Five-film poster layout preview
 
 Added remote official Disney promotional poster references for Finding Nemo, Up, Frozen, Inside Out and Coco. Clicking a main-chart film opens its shared source notebook; available posters appear in the upper part of that sidebar. Five garden entries now preview poster artwork with a small categorical flower overlay, source credits and existing evidence links. Other entries retain their flower layout. No 95-film poster coverage is claimed. Poster URLs, provenance and local-preview rights limitations are documented in sources/POSTER_PREVIEW.md. Images are not bundled in Git. All five images loaded successfully in browser QA, and the production build passes.
+
+## Complete poster references and latest interaction adjustments
+
+Poster records now cover all 95 film IDs with release-year evidence, captions, article/file sources and explicit edition states. Inside Out uses its 2015 theatrical poster. 91 captions identify theatrical-release artwork; Cinderella, Luca, Soul and Turning Red retain edition-to-confirm status. This is not full independent first-edition verification. The film list now contains all 95 posters and only draws flowers for annotated films. The SVG browser focus rectangle is disabled; keyboard focus retains a circular gold marker. The time viewBox has additional headroom to lower the chart and prevent top-edge clipping.
+
+Eight automated tests and production build pass. A batch image HEAD check encountered HTTP 429 after 9 confirmed image responses; complete remote-load verification is not claimed. See sources/POSTER_PREVIEW.md and poster_link_checks.json. Lazy loading and explicit failure fallbacks remain in place; no images are bundled or rate limits bypassed.
+
+## Poster / flower flip cards
+
+The poster list now uses click/tap flip cards rather than an overlapping flower badge. Front: the sourced poster. Back: the film's documented categorical flower and theme names, or an explicit pending-evidence notes card for an uncoded film. The card can be flipped back with a second click; native button Enter/Space handling is retained, hidden faces are removed from the accessibility tree, and reduced-motion preferences skip the transition.
+
+Browser QA confirmed 95 cards, a single Inside Out flip, keyboard Space returning to the poster, Enter revealing the flower, and Big Hero 6 showing a pending-evidence card rather than invented petals. Inside Out's updated theatrical artwork loaded successfully; the SVG focus outline computed to none, and the time viewBox now includes top headroom (130,15,740,640). Eight tests and the production build pass. External-image rate limiting remains a limitation as documented above.

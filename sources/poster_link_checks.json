@@ -1,0 +1,300 @@
+{
+  "checked_at": "2026-11-12",
+  "method": "HEAD only",
+  "results": {
+    "disney-aladdin": {
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    "disney-alice-in-wonderland": {
+      "status": 200,
+      "content_type": "image/png"
+    },
+    "disney-atlantis-the-lost-empire": {
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    "disney-bambi": {
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    "disney-beauty-and-the-beast": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "disney-big-hero-6": {
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    "disney-bolt": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "disney-brother-bear": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "disney-chicken-little": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "disney-cinderella": {
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    "disney-dinosaur": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "disney-dumbo": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "disney-encanto": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "disney-fantasia": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "disney-fantasia-2000": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "disney-frozen": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "disney-frozen-2": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "disney-fun-and-fancy-free": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "disney-hercules": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "disney-home-on-the-range": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "disney-lady-and-the-tramp": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "disney-lilo-stitch": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "disney-make-mine-music": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "disney-meet-the-robinsons": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "disney-melody-time": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "disney-moana": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "disney-moana-2": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "disney-mulan": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "disney-oliver-company": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "disney-one-hundred-and-one-dalmatians": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "disney-peter-pan": {
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    "disney-pinocchio": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "disney-pocahontas": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "disney-ralph-breaks-the-internet": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "disney-raya-and-the-last-dragon": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "disney-robin-hood": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "disney-saludos-amigos": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "disney-sleeping-beauty": {
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    "disney-snow-white-and-the-seven-dwarfs": {
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    "disney-strange-world": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "disney-tangled": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "disney-tarzan": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "disney-the-adventures-of-ichabod-and-mr-toad": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "disney-the-aristocats": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "disney-the-black-cauldron": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "disney-the-emperor-s-new-groove": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "disney-the-fox-and-the-hound": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "disney-the-great-mouse-detective": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "disney-the-hunchback-of-notre-dame": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "disney-the-jungle-book": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "disney-the-lion-king": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "disney-the-little-mermaid": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "disney-the-many-adventures-of-winnie-the-pooh": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "disney-the-princess-and-the-frog": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "disney-the-rescuers": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "disney-the-rescuers-down-under": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "disney-the-sword-in-the-stone": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "disney-the-three-caballeros": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "disney-treasure-planet": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "disney-winnie-the-pooh": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "disney-wish": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "disney-wreck-it-ralph": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "disney-zootopia": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "disney-zootopia-2": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "pixar-a-bug-s-life": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "pixar-brave": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "pixar-cars": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "pixar-cars-2": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "pixar-cars-3": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "pixar-coco": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "pixar-elemental": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "pixar-elio": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "pixar-finding-dory": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "pixar-finding-nemo": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "pixar-hoppers": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "pixar-incredibles-2": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "pixar-inside-out": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "pixar-inside-out-2": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "pixar-lightyear": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "pixar-luca": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "pixar-monsters-inc": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "pixar-monsters-university": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "pixar-onward": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "pixar-ratatouille": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "pixar-soul": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "pixar-the-good-dinosaur": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "pixar-the-incredibles": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "pixar-toy-story": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "pixar-toy-story-2": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "pixar-toy-story-3": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "pixar-toy-story-4": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "pixar-toy-story-5": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "pixar-turning-red": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "pixar-up": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    },
+    "pixar-wall-e": {
+      "error": "HTTP Error 429: Too many requests (76af2b0)"
+    }
+  }
+}
