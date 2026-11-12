@@ -10,7 +10,7 @@ function Atlas({data}){
  const [mode,setMode]=useState(0),[studio,setStudio]=useState('All studios'),[theme,setTheme]=useState('All themes'),[stage,setStage]=useState('All life stages'),[decade,setDecade]=useState('All decades'),[birth,setBirth]=useState(''),[selected,setSelected]=useState('pixar-inside-out'),[comparison,setComparison]=useState('pixar-coco'),[hover,setHover]=useState(null),[chapter,setChapter]=useState(0);
  const manualView=useRef(false);const notebookReturn=useRef(null);
  const [notebookOpen,setNotebookOpen]=useState(false);
- const markSize=3,markStyle='solid';
+ const markSize=2.5,markStyle='solid';
  const showResearchChapters=false;
  const films=data.films;const positions=useMemo(()=>landscape(films),[films]);
  const match=f=>(studio==='All studios'||f.studio===studio)&&(theme==='All themes'||f.themes.some(t=>t.theme===theme))&&(stage==='All life stages'||f.life_stages.some(s=>s.life_stage===stage))&&(decade==='All decades'||Math.floor(f.year/10)*10===+decade);
@@ -39,7 +39,7 @@ function Atlas({data}){
  </div><section id="garden-below" className="garden-below" inert={notebookOpen?true:undefined}><div className="garden-below-heading"><div><span className="eyebrow">05 / EMOTIONAL GARDEN</span><h2>The stories, in bloom.</h2><p>One flower per partially coded film. Petals show documented themes, not emotional intensity.</p></div><button onClick={()=>window.scrollTo({top:0,behavior:'smooth'})}>Back to atlas ↑</button></div><GardenGallery films={matches} selected={selected} setSelected={setSelected} onEvidence={(id,trigger)=>{notebookReturn.current=trigger;setSelected(id);setNotebookOpen(true);}}/></section></>;
 
 }
-function Journey({films,positions,mode,match,selected,setSelected,setHover,birth,markSize=3,markStyle='solid'}){
+function Journey({films,positions,mode,match,selected,setSelected,setHover,birth,markSize=2.5,markStyle='solid'}){
  const ref=useRef(),group=useRef();const [animated,setAnimated]=useState(mode);const current=useRef(mode);
  useEffect(()=>{if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){current.current=mode;setAnimated(mode);return;}const from=current.current;const timer=d3.timer(t=>{const v=d3.interpolateNumber(from,mode)(d3.easeCubicInOut(Math.min(t/650,1)));current.current=v;setAnimated(v);if(t>=650)timer.stop();});return()=>timer.stop();},[mode]);
  useEffect(()=>{const svg=d3.select(ref.current);if(mode>1.8){const zoom=d3.zoom().scaleExtent([.7,5]).on('zoom',e=>d3.select(group.current).attr('transform',e.transform));svg.call(zoom);return()=>svg.on('.zoom',null);}d3.select(group.current).attr('transform',null);},[mode>1.8]);
