@@ -88,3 +88,7 @@ TMDB user reviews are planned for a later stage to explore growth, family, loss 
 - [Official use conditions](https://developer.themoviedb.org/docs/faq): non-commercial API use is free with required attribution, approved logo and the notice “This product uses the TMDB API but is not endorsed or certified by TMDB.” Follow the API terms; access does not imply unrestricted redistribution of third-party review text. Keep credentials out of GitHub.
 
 Before analysis, check review counts per film, available fields, missing values, duplicate IDs, dates and language coverage. Theme labels will be project-created annotations. Viewer age cannot be inferred, and TMDB reviews must not be described as IMDb reviews. Publish project-generated summaries; verify applicable rights before publishing any raw review corpus.
+
+## November 12 implementation addendum
+
+Current research question, annotation definitions, source hierarchy and IMDb-only import workflow are documented in [METHODOLOGY.md](METHODOLOGY.md). Current computed coverage and limitations are in [IMPLEMENTATION_REPORT.md](IMPLEMENTATION_REPORT.md) and [analysis/atlas_validation.json](analysis/atlas_validation.json). The earlier prospective source list is preserved as historical research context; it is not the app's acquisition policy. No TMDB review integration or excluded-platform ratings were added.

@@ -1,0 +1,11 @@
+film_id,life_stage,source_url,evidence_locator,evidence,coding_rule,coder,coded_at,review_status
+pixar-inside-out,Childhood,https://www.pixar.com/inside-out,Synopsis; Riley; Fear; Islands of Personality,Riley is explicitly eleven.,L-age-or-explicit-role-v1,Codex-assisted source reading,2026-11-12,source_checked_pending_human
+pixar-finding-nemo,Childhood,https://www.pixar.com/finding-nemo,Synopsis; Nemo; Marlin; Dory,Nemo is six and starting school.,L-age-or-explicit-role-v1,Codex-assisted source reading,2026-11-12,source_checked_pending_human
+pixar-finding-nemo,Adulthood,https://www.pixar.com/finding-nemo,Synopsis; Nemo; Marlin; Dory,Marlin is the surviving parent raising Nemo.,L-age-or-explicit-role-v1,Codex-assisted source reading,2026-11-12,source_checked_pending_human
+pixar-up,Childhood,https://movies.disney.com/up,Official synopsis; existing pixar_films.csv Up plot,Russell is eight.,L-age-or-explicit-role-v1,Codex-assisted source reading,2026-11-12,source_checked_pending_human
+pixar-up,Later Life,https://movies.disney.com/up,Official synopsis; existing pixar_films.csv Up plot,Official synopsis calls Carl retired; local snapshot gives age 78.,L-age-or-explicit-role-v1,Codex-assisted source reading,2026-11-12,source_checked_pending_human
+pixar-coco,Childhood,https://www.pixar.com/coco,Synopsis; Miguel; Héctor,Miguel is twelve.,L-age-or-explicit-role-v1,Codex-assisted source reading,2026-11-12,source_checked_pending_human
+pixar-turning-red,Adolescence,https://www.pixar.com/turning-red,Growing Up Is A Beast; Meilin Lee,Mei is thirteen.,L-age-or-explicit-role-v1,Codex-assisted source reading,2026-11-12,source_checked_pending_human
+pixar-soul,Adulthood,https://www.pixar.com/soul,Synopsis; Joe Gardner,Joe is a 46-year-old teacher.,L-age-or-explicit-role-v1,Codex-assisted source reading,2026-11-12,source_checked_pending_human
+pixar-luca,Adolescence,https://www.pixar.com/luca,Synopsis; Luca Paguro; Alberto Scorfano,Luca is thirteen; Alberto is described as a teenager.,L-age-or-explicit-role-v1,Codex-assisted source reading,2026-11-12,source_checked_pending_human
+disney-moana,Adolescence,https://movies.disney.com/moana,Film synopsis,The synopsis explicitly describes Moana as a teenager.,L-age-or-explicit-role-v1,Codex-assisted source reading,2026-11-12,source_checked_pending_human

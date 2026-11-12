@@ -49,3 +49,25 @@ TMDB user reviews are planned for a later stage to explore growth, family, loss 
 - [Official use conditions](https://developer.themoviedb.org/docs/faq): non-commercial API use is free with required attribution, approved logo and the notice “This product uses the TMDB API but is not endorsed or certified by TMDB.” Follow the API terms; access does not imply unrestricted redistribution of third-party review text. Keep credentials out of GitHub.
 
 Before analysis, check review counts per film, available fields, missing values, duplicate IDs, dates and language coverage. Theme labels will be project-created annotations. Viewer age cannot be inferred, and TMDB reviews must not be described as IMDb reviews. Publish project-generated summaries; verify applicable rights before publishing any raw review corpus.
+
+## Run the interactive atlas
+
+React + Vite + D3 implementation (November 12, 2026):
+
+```sh
+npm ci
+npm run data
+npm test
+npm run build
+npm run dev
+```
+
+Open the printed local address. Scroll through the sticky first chapter, use its transformation slider or the chapter navigation. Filters and selected films link the views. Entering a birth year shows approximate calendar age at release, not age at first viewing. Select any film and open its evidence notebook.
+
+- [Implementation status and remaining research](IMPLEMENTATION_REPORT.md)
+- [Coding and spatial methodology](METHODOLOGY.md)
+- [Generated 95-film master](data/processed/films_master.csv)
+- Editable source-linked tables: [themes](data/annotations/film_themes.csv), [life stages](data/annotations/film_life_stages.csv), [character relationships](data/annotations/film_relationships.csv)
+- [Coverage and checksums](analysis/atlas_validation.json)
+
+10/95 films have partial theme coding; zero have completed human second review. The 31 IMDb records are historical secondary snapshots with unresolved title IDs and observation dates. `analysis/import_imdb.py --help` describes a permitted official-file refresh workflow. Public deployment is not configured in this repository.

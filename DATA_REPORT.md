@@ -456,3 +456,7 @@ TMDB user reviews are planned for a later stage to explore growth, family, loss 
 - [Official use conditions](https://developer.themoviedb.org/docs/faq): non-commercial API use is free with required attribution, approved logo and the notice “This product uses the TMDB API but is not endorsed or certified by TMDB.” Follow the API terms; access does not imply unrestricted redistribution of third-party review text. Keep credentials out of GitHub.
 
 Before analysis, check review counts per film, available fields, missing values, duplicate IDs, dates and language coverage. Theme labels will be project-created annotations. Viewer age cannot be inferred, and TMDB reviews must not be described as IMDb reviews. Publish project-generated summaries; verify applicable rights before publishing any raw review corpus.
+
+## November 12 atlas implementation addendum
+
+The historical acquisition report above is preserved. The new website uses only IMDb for audience ratings. Its unified 95-film metadata table passes internal consistency checks; this does not mean all external facts were independently reverified. Theme coverage is 10/95 partially annotated films, life-stage and relationship coverage each 8/95, human second-review coverage 0/95. See [IMPLEMENTATION_REPORT.md](IMPLEMENTATION_REPORT.md), [METHODOLOGY.md](METHODOLOGY.md) and the generated [validation manifest](analysis/atlas_validation.json). Missing annotations remain unknown. No review corpus was collected.
