@@ -65,3 +65,7 @@ Life Tapestry and its navigation entry are removed from application code. The ga
 ## Five-button navigation revision
 
 The progress slider and small chart instructions are removed. Five larger bordered buttons, numbered 1–5, provide clear hover, focus and active states. Buttons 1–4 trigger the same animated continuous geometry changes; button 5 scrolls to the garden list below, now labelled 05. Browser checks confirmed zero sliders, five navigation buttons, river activation and garden navigation. The production build passes.
+
+## Five-film poster layout preview
+
+Added remote official Disney promotional poster references for Finding Nemo, Up, Frozen, Inside Out and Coco. Clicking a main-chart film opens its shared source notebook; available posters appear in the upper part of that sidebar. Five garden entries now preview poster artwork with a small categorical flower overlay, source credits and existing evidence links. Other entries retain their flower layout. No 95-film poster coverage is claimed. Poster URLs, provenance and local-preview rights limitations are documented in sources/POSTER_PREVIEW.md. Images are not bundled in Git. All five images loaded successfully in browser QA, and the production build passes.
