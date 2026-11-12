@@ -46,3 +46,14 @@ The app uses only imdb_score and imdb_counts from the existing pixarfilms snapsh
 `npm ci`, `npm run data`, `npm test`, `npm run build`, `npm run dev`.
 
 Raw files and previous analyses are preserved. `analysis/build_atlas.py` checks counts, IDs, references, annotation evidence, allowed categories and rating ranges; it emits processed CSVs, a browser JSON bundle, coverage and input SHA-256 hashes. These are internal consistency checks, not independent verification of all 95 films. Source metadata snapshots remain labelled accordingly. Run old `analysis/analyze.py` separately if needed; it rewrites the historical report.
+
+## Four additional thematic views
+
+The concept comparison board is a design reference only; its illustrated nodes and connections are not imported. The live views read the same atlas JSON, with unchanged coverage. Film IDs, selection, filters, mark size and birth-year highlighting are shared. The shelf retains matching uncoded films and excludes them from thematic layout calculations.
+
+- Emotion River: one equal-width categorical strand per recorded theme, passing through the positions of films annotated with that theme. X is release year (domain extends two years beyond the visible coded sample); film Y is the mean fixed index of its recorded themes, an arbitrary layout coordinate, not a score. Catmull–Rom interpolation, band boundaries and end extensions are visual guides, not additional observations or inferred themes. Paths connect recorded appearances; they do not trace audiences or continuous theme prevalence.
+- Story Galaxy: film and theme nodes, exactly one edge per recorded positive film-theme assignment. D3 force layout with sorted film IDs, fixed starting coordinates, seeded random source, 260 static iterations; pointer dragging and zoom are supported. Theme hub size is a visual type distinction, not theme frequency. Unknown films do not enter the force layout.
+- Emotional Garden: ten fixed petal positions correspond to the ordered theme vocabulary. Filled petals represent positive annotations; unfilled petals are unknown, not reviewed negatives. Petal length, stem and leaves are constant decorative geometry, not emotional intensity. One film per flower; the center mark links to the shared selection.
+- Life Tapestry: release year X and four discrete story-stage rows. A film can repeat across rows; a dashed vertical join identifies the same film's documented multi-stage membership. Within-row colored links join consecutive annotated films sharing a recorded theme. These links do not represent a character's aging, continuity between films, or viewer development. The shelf is based on missing life-stage coding (87 films in the current full selection).
+
+The pilot supports exploration only. Empty filtered samples display an explicit no-coded-films message. Never infer population trends from the partially coded sample.

@@ -45,3 +45,9 @@ Local Vite page loaded successfully. The 95 SVG film marks remained present in t
 ## Focused workspace revision
 
 At the user's request, the visible experience now contains only the Time Tunnel / Radial Time Disc / Emotional Landscape workspace. The introduction, fingerprint wall and later research chapters are hidden, retained in source for future work. The main chart fills the available viewport with compact controls and a persistent film summary. Transforms use direct tabs and the reversible slider rather than a tall scrolling chapter. Source evidence and methodology open in a dismissible side panel with Escape and keyboard focus management. No illustrations are displayed and no film annotations were changed.
+
+## Four thematic visual directions added
+
+Emotion River, Story Galaxy, Emotional Garden and Life Tapestry are now live SVG/D3 views, selected from the bottom navigation alongside the original tunnel/disc/landscape. The concept-board image is not embedded as a substitute for a chart. Emotion River is the initial view. All movie filters and selected IDs are shared. Large mark sizing and solid/outline/tick controls apply throughout. Uncoded movies remain visible on an excluded shelf.
+
+Validation: six automated tests pass, including new tests for evidence-only galaxy edges, deterministic galaxy coordinates, exactly one river node per coded film, finite coordinates and empty-input handling. Production build passes. Browser checks exercised all four selectors, Coco selection across views, no-data filtering with Love, reset, return to the 95-node tunnel and preserved source access. No browser warnings/errors were observed. Screenshots record all four live views. Galaxy pointer gestures are implemented but not exhaustively browser-tested. Layouts remain sparse where real evidence is sparse; no new themes, reviews or relationships were invented.
