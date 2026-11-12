@@ -57,3 +57,7 @@ Validation: six automated tests pass, including new tests for evidence-only gala
 The initial scene is restored to Time Tunnel. Its same 95 film marks now continuously interpolate through Disc (1), Landscape (2) and Emotion River (3) on a single reversible slider. The river is an additional stage, not a replacement screen. Its strata fade in as the landscape fades out, with missing-theme films moving between explicitly excluded shelves. The river uses the full coded sample for fixed geometry so filtering does not mismatch strand and film positions.
 
 The Story Galaxy entry has been removed from visible navigation. Emotional Garden is now a separate film list below the main workspace, with source-linked themes and evidence buttons. No uncoded flower glyphs are manufactured. Life Tapestry remains available separately. A seventh automated test verifies river endpoints, midpoint interpolation and finite reverse coordinates for all 95 records. These decisions supersede the earlier default-river/separate-garden notes above.
+
+## Latest interface cleanup
+
+Life Tapestry and its navigation entry are removed from application code. The garden's trailing coverage sentence is removed from the visible list at the user's request. Coverage and pending-review information remain available in source notes and the methodology; annotations are unchanged. Film marks are fixed to Size 3 / Solid.
