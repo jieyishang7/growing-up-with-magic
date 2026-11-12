@@ -37,3 +37,7 @@ Studio/decade/theme/life-stage filters, birth-year approximate release age and y
 - Receive/locate original pitch PDF and image for a visual comparison pass.
 - Improve landscape label collision, touch interactions, tooltip readability and richer stage-specific character organization as the dataset expands.
 - No audience comments, viewer ages or longitudinal interpretation claims are supported.
+
+### Observed browser QA
+
+Local Vite page loaded successfully. The 95 SVG film marks remained present in the landscape; uncoded first film landed at the shelf coordinate (80,567). Manual tunnel/disc/landscape navigation and reversal were exercised. Family filter reported 5 matching annotated films, Pixar filter 31; reset restored 95. Birth year 2000 produced approximate age 15 for Inside Out (2015). Expanding Later Life exposed Up and its sourced Carl/Russell relationship. Clicking the Family theme in the universe updated linked filtering. Comparing Inside Out with Coco showed shared Memory and Jaccard 0.14. The selected Inside Out notebook displayed six evidence entries. Browser console inspection returned no errors/warnings. Desktop and a 390×844 responsive viewport were inspected; screenshots are delivered separately. Pan/zoom and drag handlers are implemented but were not exhaustively gesture-tested. This is a working first version, not a completed accessibility or cross-browser audit.
