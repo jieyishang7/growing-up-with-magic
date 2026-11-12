@@ -81,3 +81,9 @@ Eight automated tests and production build pass. A batch image HEAD check encoun
 The poster list now uses click/tap flip cards rather than an overlapping flower badge. Front: the sourced poster. Back: the film's documented categorical flower and theme names, or an explicit pending-evidence notes card for an uncoded film. The card can be flipped back with a second click; native button Enter/Space handling is retained, hidden faces are removed from the accessibility tree, and reduced-motion preferences skip the transition.
 
 Browser QA confirmed 95 cards, a single Inside Out flip, keyboard Space returning to the poster, Enter revealing the flower, and Big Hero 6 showing a pending-evidence card rather than invented petals. Inside Out's updated theatrical artwork loaded successfully; the SVG focus outline computed to none, and the time viewBox now includes top headroom (130,15,740,640). Eight tests and the production build pass. External-image rate limiting remains a limitation as documented above.
+
+## Tunnel decade labels and initial flower visibility
+
+Tunnel decade labels now follow the same year-dependent depth and angle as film marks, with short leader lines and readable text backing. Labels interpolate to the existing radial-disc positions, which are unchanged. A ninth test checks the unchanged disc coordinates and bounded tunnel-label offsets.
+
+The poster gallery sorts partially theme-coded films first, chronologically within each group. Up, Inside Out and Turning Red initially show their flower backs, while neighbouring cards show posters. All flips remain user-controlled afterwards. Browser QA confirmed the first ten entries are the ten annotated films and three cards start on their flower side. Main-view navigation scrolls back to the full atlas so the chart's top stays visible.

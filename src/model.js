@@ -24,3 +24,12 @@ export function timePosition(f,index,mode,all,positions){
  const land=positions.get(f.id)||[80+(ui%40)*21.5,567+Math.floor(ui/40)*12];
  return mode<=1?d3.interpolate(tunnel,disc)(mode):d3.interpolate(disc,land)(mode-1);
 }
+
+// Tunnel decades follow their release-year depth/angle; the disc layout is unchanged.
+export function decadeLabelPosition(year,mode){
+ const t=(year-1937)/89,a=t*Math.PI*2-Math.PI/2,r=34+Math.pow(t,1.8)*300;
+ const anchor=[500+Math.cos(a)*r,255+t*100+Math.sin(a)*r*.74];
+ const tunnel=[anchor[0]+Math.cos(a)*28,anchor[1]+Math.sin(a)*24];
+ const disc=[500+Math.cos(a)*315,330+Math.sin(a)*300];
+ return {anchor,label:d3.interpolateArray(tunnel,disc)(Math.max(0,Math.min(1,mode)))};
+}

@@ -16,7 +16,7 @@ export default function StoryViews({view,films,...props}){const Components={rive
 
 function FlowerPortrait({f}){return <svg viewBox="-75 -80 150 190" role="img" aria-label={`${f.title}: ${f.themes.map(t=>t.theme).join(', ')}`}><path d="M0,9C-12,48 12,55 0,83" fill="none" stroke="#a495ed" strokeOpacity=".45"/><path d="M0,59Q-35,28 -31,54Q-18,71 0,59" fill="#8458cc22" stroke="#8458cc66" strokeWidth=".7"/>{themeNames.map((t,i)=>{const on=f.themes.some(r=>r.theme===t);return <g key={t} transform={`rotate(${i*36})`}><path d="M0,-8C-23,-28 -18,-50 0,-62C18,-50 23,-28 0,-8Z" fill={on?themeColor(t):'none'} fillOpacity=".2" stroke={on?themeColor(t):'#a495ed'} strokeWidth={on?1:.5} strokeOpacity={on?1:.13}/>{on&&<path d="M0,-10Q-7,-35 0,-60" fill="none" stroke={themeColor(t)} strokeWidth=".6"/>}</g>;})}<circle r="4" fill={f.studio==='Pixar'?'#77a4ef':'#e16bb8'}/></svg>;}
 function FlipFilmCard({f,selected,setSelected,onEvidence}){
- const [flipped,setFlipped]=useState(false);const coded=f.themes.length>0;
+ const [flipped,setFlipped]=useState(()=>f.themes.length>0&&['pixar-up','pixar-inside-out','pixar-turning-red'].includes(f.id));const coded=f.themes.length>0;
  return <article className={`garden-item flip-film-card ${selected===f.id?'selected':''}`}>
  <button className="flower-select flip-trigger" aria-pressed={flipped} aria-label={`${flipped?'Show poster':coded?'Show emotional flower':'Show film notes'} for ${f.title}`} onClick={()=>{setFlipped(!flipped);setSelected(f.id);}}>
  <div className="flip-scene"><div className={`flip-inner ${flipped?'is-flipped':''}`}>
@@ -27,4 +27,4 @@ function FlipFilmCard({f,selected,setSelected,onEvidence}){
  {posters[f.id]&&<a className="poster-credit" href={posters[f.id].source} target="_blank" rel="noreferrer">Poster © {posters[f.id].credit} · source ↗</a>}
  <button className="garden-evidence" onClick={e=>onEvidence(f.id,e.currentTarget)}>Evidence ↗</button></article>;
 }
-export function GardenGallery({films,selected,setSelected,onEvidence}){return <div className="garden-gallery">{films.map(f=><FlipFilmCard key={f.id} f={f} selected={selected} setSelected={setSelected} onEvidence={onEvidence}/>)}{!films.length&&<p>No films match the current filters.</p>}</div>;}
+export function GardenGallery({films,selected,setSelected,onEvidence}){const ordered=[...films].sort((a,b)=>Number(b.themes.length>0)-Number(a.themes.length>0)||a.year-b.year||a.id.localeCompare(b.id));return <div className="garden-gallery">{ordered.map(f=><FlipFilmCard key={f.id} f={f} selected={selected} setSelected={setSelected} onEvidence={onEvidence}/>)}{!films.length&&<p>No films match the current filters.</p>}</div>;}

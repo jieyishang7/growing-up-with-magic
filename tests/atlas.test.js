@@ -29,3 +29,15 @@ test('95 identities remain finite through reversible spatial transformations',()
 test('client data only includes IMDb audience metrics and source dates remain honest',()=>{
  for(const f of films){assert.ok(!('rotten_tomatoes_score' in f));if(f.rating){assert.ok(f.rating.averageRating>=0&&f.rating.averageRating<=10);assert.ok(f.rating.numVotes>=0);assert.equal(f.rating.observed_at,'');}}
 });
+
+test('tunnel decade labels follow their depth anchors while disc labels stay unchanged',async()=>{
+ const {decadeLabelPosition}=await import('../src/model.js');
+ for(let year=1940;year<=2020;year+=10){
+  const a=(year-1937)/89*2*Math.PI-Math.PI/2;
+  const tunnel=decadeLabelPosition(year,0),disc=decadeLabelPosition(year,1);
+  assert.deepEqual(disc.label,[500+Math.cos(a)*315,330+Math.sin(a)*300]);
+  const gap=Math.hypot(tunnel.label[0]-tunnel.anchor[0],tunnel.label[1]-tunnel.anchor[1]);
+  assert.ok(gap>=23&&gap<=29);
+  assert.ok(tunnel.label.every(Number.isFinite));
+ }
+});
