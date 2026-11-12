@@ -1,5 +1,14 @@
+import {timePosition} from './model.js';
 import * as d3 from 'd3';
 import {themeNames} from './model.js';
 export function timeDomain(films,stage=false){const years=films.filter(f=>stage?f.life_stages.length:f.themes.length).map(f=>f.year);const [a,b]=d3.extent(years);return years.length?[a-2,b+2]:[1937,2026];}
 export function riverLayout(films){const coded=films.filter(f=>f.themes.length);const x=d3.scaleLinear().domain(timeDomain(films)).range([140,935]);return coded.map(f=>{const same=coded.filter(g=>g.year===f.year).sort((a,b)=>a.id.localeCompare(b.id));return {film:f,x:x(f.year)+(same.findIndex(g=>g.id===f.id)-(same.length-1)/2)*10,y:110+d3.mean(f.themes,t=>themeNames.indexOf(t.theme))*35};});}
 export function galaxyLayout(films){const coded=films.filter(f=>f.themes.length).sort((a,b)=>a.id.localeCompare(b.id));const themes=themeNames.filter(t=>coded.some(f=>f.themes.some(a=>a.theme===t)));const nodes=[...themes.map((t,i)=>({id:t,theme:true,x:530+230*Math.cos(i/themes.length*Math.PI*2),y:275+150*Math.sin(i/themes.length*Math.PI*2)})),...coded.map((f,i)=>({id:f.id,film:f,x:500+80*Math.cos(i),y:280+80*Math.sin(i)}))];const links=coded.flatMap(f=>f.themes.map(t=>({source:f.id,target:t.theme})));const sim=d3.forceSimulation(nodes).randomSource(d3.randomLcg(.42)).force('link',d3.forceLink(links).id(n=>n.id).distance(115)).force('charge',d3.forceManyBody().strength(-180)).force('collide',d3.forceCollide(30)).force('center',d3.forceCenter(520,280)).stop();sim.tick(260);return {nodes,links};}
+
+export function journeyPosition(f,i,mode,films,positions,riverPositions){
+ const before=timePosition(f,i,Math.min(2,mode),films,positions);
+ if(mode<=2)return before;
+ const unknown=films.filter(a=>!a.themes.length),index=unknown.findIndex(a=>a.id===f.id);
+ const after=riverPositions.get(f.id)||[80+(index%44)*20,569+Math.floor(index/44)*17];
+ return d3.interpolateArray(before,after)(Math.min(1,mode-2));
+}

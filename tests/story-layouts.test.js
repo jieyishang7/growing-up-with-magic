@@ -20,3 +20,18 @@ test('galaxy contains only evidenced film-theme edges and reproduces coordinates
  assert.ok(a.nodes.every(n=>Number.isFinite(n.x)&&Number.isFinite(n.y)));
  assert.equal(galaxyLayout([]).nodes.length,0);
 });
+
+test('landscape unfolds into the river without losing any of the 95 film identities',async()=>{
+ const {journeyPosition}=await import('../src/storyLayouts.js');
+ const {landscape,timePosition}=await import('../src/model.js');
+ const positions=landscape(films),river=new Map(riverLayout(films).map(n=>[n.film.id,[n.x,n.y]]));
+ for(const [i,f] of films.entries()){
+  const start=journeyPosition(f,i,2,films,positions,river);
+  assert.deepEqual(start,timePosition(f,i,2,films,positions));
+  const end=journeyPosition(f,i,3,films,positions,river);
+  if(river.has(f.id))assert.deepEqual(end,river.get(f.id));
+  const mid=journeyPosition(f,i,2.5,films,positions,river);
+  assert.ok(mid.every((v,k)=>Math.abs(v-(start[k]+end[k])/2)<1e-9));
+  for(const t of [3,2.75,2.5,2.25,2])assert.ok(journeyPosition(f,i,t,films,positions,river).every(Number.isFinite));
+ }
+});

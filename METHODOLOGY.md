@@ -57,3 +57,7 @@ The concept comparison board is a design reference only; its illustrated nodes a
 - Life Tapestry: release year X and four discrete story-stage rows. A film can repeat across rows; a dashed vertical join identifies the same film's documented multi-stage membership. Within-row colored links join consecutive annotated films sharing a recorded theme. These links do not represent a character's aging, continuity between films, or viewer development. The shelf is based on missing life-stage coding (87 films in the current full selection).
 
 The pilot supports exploration only. Empty filtered samples display an explicit no-coded-films message. Never infer population trends from the partially coded sample.
+
+### Continuous river stage
+
+The main journey slider now spans 0–3: tunnel, disc, landscape, river. From 2 to 3, each existing film mark linearly interpolates from its landscape coordinate to its river coordinate. Uncoded marks interpolate between labelled shelf positions. No IDs are replaced. Theme ribbons fade in as contours fade out. Filtering fades/removes links while preserving the full-sample river coordinates. The original tunnel remains the initial scene; garden flowers are listed below the workspace, and galaxy is not exposed in navigation.
