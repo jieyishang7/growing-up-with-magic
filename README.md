@@ -62,7 +62,7 @@ npm run build
 npm run dev
 ```
 
-Open the printed local address. Scroll through the sticky first chapter, use its transformation slider or the chapter navigation. Filters and selected films link the views. Entering a birth year shows approximate calendar age at release, not age at first viewing. Select any film and open its evidence notebook.
+Open the printed local address. Use the five navigation buttons to transform the atlas or open the emotional garden. Filters and selected films link the views. Select any film and open its evidence notebook. The poster archive expands all matching films without pagination.
 
 - [Implementation status and remaining research](IMPLEMENTATION_REPORT.md)
 - [Coding and spatial methodology](METHODOLOGY.md)
@@ -70,4 +70,12 @@ Open the printed local address. Scroll through the sticky first chapter, use its
 - Editable source-linked tables: [themes](data/annotations/film_themes.csv), [life stages](data/annotations/film_life_stages.csv), [character relationships](data/annotations/film_relationships.csv)
 - [Coverage and checksums](analysis/atlas_validation.json)
 
-10/95 films have partial theme coding; zero have completed human second review. The 31 IMDb records are historical secondary snapshots with unresolved title IDs and observation dates. `analysis/import_imdb.py --help` describes a permitted official-file refresh workflow. Public deployment is not configured in this repository.
+10/95 films have partial theme coding; zero have completed human second review. The 31 IMDb records are historical secondary snapshots with unresolved title IDs and observation dates. `analysis/import_imdb.py --help` describes a permitted official-file refresh workflow.
+
+## GitHub Pages
+
+Website: https://jieyishang7.github.io/growing-up-with-magic/
+
+The `Publish GitHub Pages` workflow tests and builds the atlas on each push to `main`, then publishes `dist` through GitHub Actions. The build sets `/growing-up-with-magic/` as its asset and data base path. Pages is configured to use GitHub Actions as its publishing source.
+
+This GitHub Pages website is public and has no password, as requested. The password used by the earlier separate hosted preview is not stored in this repository and does not apply to Pages.
