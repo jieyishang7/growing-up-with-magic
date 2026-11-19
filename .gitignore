@@ -3,3 +3,5 @@ dist/
 work/
 .DS_Store
 *.tsv.gz
+__pycache__/
+*.pyc

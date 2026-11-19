@@ -61,3 +61,8 @@ The pilot supports exploration only. Empty filtered samples display an explicit 
 ### Continuous river stage
 
 The main journey slider now spans 0–3: tunnel, disc, landscape, river. From 2 to 3, each existing film mark linearly interpolates from its landscape coordinate to its river coordinate. Uncoded marks interpolate between labelled shelf positions. No IDs are replaced. Theme ribbons fade in as contours fade out. Filtering fades/removes links while preserving the full-sample river coordinates. The original tunnel remains the initial scene; garden flowers are listed below the workspace, and galaxy is not exposed in navigation.
+# User supplied audience supplement November 19 2026
+
+The 93 records extracted from `IDS_009.jmp` are displayed only as unverified supplementary IMDb-labelled worksheet entries in individual film notes. Title, year and studio matching establish the intended film, not the correctness or provenance of the score. The worksheet stores values from 54 to 85 without a scale note. A division-by-ten candidate is shown with that assumption adjacent to it; no confirmed `averageRating` is created. No vote count, IMDb ID, observation date or upstream URL is inferred. Import date is recorded separately from observation date.
+
+The supplementary records do not replace primary ratings, enter audience charts, affect spatial layouts, or supply theme/life-stage annotations. The primary secondary-snapshot coverage remains 31 films, supplemented by 93 unverified records and zero verified supplementary ratings. Budget, box-office, awards, inflation factors and other platform measures from the worksheet are not used.

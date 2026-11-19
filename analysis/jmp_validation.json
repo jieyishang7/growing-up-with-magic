@@ -1,0 +1,17 @@
+{
+  "rows": 93,
+  "matched_films": 93,
+  "studios": {
+    "Disney Animation": 64,
+    "Pixar": 29
+  },
+  "overlap_with_primary": 29,
+  "differing_candidates": 4,
+  "films_without_supplement": [
+    "pixar-hoppers",
+    "pixar-toy-story-5"
+  ],
+  "primary_overwritten": 0,
+  "eligible_for_primary_ratings": false,
+  "review_status": "user_supplied_unverified"
+}

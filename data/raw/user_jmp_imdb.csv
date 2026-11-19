@@ -1,0 +1,94 @@
+film_id,source_movie,source_year,source_studio,imdb_raw,source_row,identity_match,source_id,source_file,source_sha256,snapshot_acquired
+disney-snow-white-and-the-seven-dwarfs,Snow White and the Seven Dwarfs,1937,Disney,76.0,1,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+disney-pinocchio,Pinocchio,1940,Disney,75.0,2,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+disney-fantasia,Fantasia,1940,Disney,77.0,3,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+disney-dumbo,Dumbo,1941,Disney,72.0,4,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+disney-bambi,Bambi,1942,Disney,73.0,5,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+disney-saludos-amigos,Saludos Amigos,1943,Disney,60.0,6,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+disney-the-three-caballeros,The Three Caballeros,1945,Disney,63.0,7,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+disney-make-mine-music,Make Mine Music,1946,Disney,61.0,8,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+disney-fun-and-fancy-free,Fun and Fancy Free,1947,Disney,64.0,9,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+disney-melody-time,Melody Time,1948,Disney,61.0,10,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+disney-the-adventures-of-ichabod-and-mr-toad,The Adventures of Ichabod and Mr. Toad,1949,Disney,68.0,11,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+disney-cinderella,Cinderella,1950,Disney,73.0,12,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+disney-alice-in-wonderland,Alice in Wonderland,1951,Disney,73.0,13,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+disney-peter-pan,Peter Pan,1953,Disney,73.0,14,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+disney-lady-and-the-tramp,Lady and the Tramp,1955,Disney,73.0,15,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+disney-sleeping-beauty,Sleeping Beauty,1959,Disney,72.0,16,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+disney-one-hundred-and-one-dalmatians,One Hundred and One Dalmatians,1961,Disney,73.0,17,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+disney-the-sword-in-the-stone,The Sword in the Stone,1963,Disney,71.0,18,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+disney-the-jungle-book,The Jungle Book,1967,Disney,76.0,19,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+disney-the-aristocats,The Aristocats,1970,Disney,71.0,20,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+disney-robin-hood,Robin Hood,1973,Disney,75.0,21,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+disney-the-many-adventures-of-winnie-the-pooh,The Many Adventures of Winnie the Pooh,1977,Disney,75.0,22,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+disney-the-rescuers,The Rescuers,1977,Disney,69.0,23,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+disney-the-fox-and-the-hound,The Fox and the Hound,1981,Disney,72.0,24,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+disney-the-black-cauldron,The Black Cauldron,1985,Disney,63.0,25,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+disney-the-great-mouse-detective,The Great Mouse Detective,1986,Disney,71.0,26,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+disney-oliver-company,Oliver & Company,1988,Disney,66.0,27,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+disney-the-little-mermaid,The Little Mermaid,1989,Disney,76.0,28,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+disney-the-rescuers-down-under,The Rescuers Down Under,1990,Disney,68.0,29,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+disney-beauty-and-the-beast,Beauty and the Beast,1991,Disney,80.0,30,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+disney-aladdin,Aladdin,1992,Disney,80.0,31,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+disney-the-lion-king,The Lion King,1994,Disney,85.0,32,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+disney-pocahontas,Pocahontas,1995,Disney,67.0,33,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+pixar-toy-story,Toy Story,1995,Pixar,83.0,34,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+disney-the-hunchback-of-notre-dame,The Hunchback of Notre Dame,1996,Disney,70.0,35,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+disney-hercules,Hercules,1997,Disney,73.0,36,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+disney-mulan,Mulan,1998,Disney,77.0,37,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+pixar-a-bug-s-life,A Bug's Life,1998,Pixar,72.0,38,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+disney-tarzan,Tarzan,1999,Disney,73.0,39,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+pixar-toy-story-2,Toy Story 2,1999,Pixar,79.0,40,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+disney-fantasia-2000,Fantasia 2000,2000,Disney,71.0,41,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+disney-dinosaur,Dinosaur,2000,Disney,64.0,42,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+disney-the-emperor-s-new-groove,The Emperor's New Groove,2000,Disney,74.0,43,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+disney-atlantis-the-lost-empire,Atlantis: The Lost Empire,2001,Disney,69.0,44,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+pixar-monsters-inc,"Monsters, Inc.",2001,Pixar,81.0,45,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+disney-lilo-stitch,Lilo & Stitch,2002,Disney,73.0,46,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+disney-treasure-planet,Treasure Planet,2002,Disney,72.0,47,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+disney-brother-bear,Brother Bear,2003,Disney,69.0,48,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+pixar-finding-nemo,Finding Nemo,2003,Pixar,82.0,49,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+disney-home-on-the-range,Home on the Range,2004,Disney,54.0,50,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+pixar-the-incredibles,The Incredibles,2004,Pixar,80.0,51,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+disney-chicken-little,Chicken Little,2005,Disney,57.0,52,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+pixar-cars,Cars,2006,Pixar,72.0,53,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+disney-meet-the-robinsons,Meet the Robinsons,2007,Disney,68.0,54,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+pixar-ratatouille,Ratatouille,2007,Pixar,81.0,55,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+pixar-wall-e,WALL-E,2008,Pixar,84.0,56,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+disney-bolt,Bolt,2008,Disney,68.0,57,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+disney-the-princess-and-the-frog,The Princess and the Frog,2009,Disney,72.0,58,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+pixar-up,Up,2009,Pixar,83.0,59,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+disney-tangled,Tangled,2010,Disney,77.0,60,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+pixar-toy-story-3,Toy Story 3,2010,Pixar,83.0,61,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+disney-winnie-the-pooh,Winnie the Pooh,2011,Disney,71.0,62,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+pixar-cars-2,Cars 2,2011,Pixar,62.0,63,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+disney-wreck-it-ralph,Wreck-It Ralph,2012,Disney,77.0,64,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+pixar-brave,Brave,2012,Pixar,71.0,65,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+disney-frozen,Frozen,2013,Disney,74.0,66,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+pixar-monsters-university,Monsters University,2013,Pixar,72.0,67,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+disney-big-hero-6,Big Hero 6,2014,Disney,78.0,68,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+pixar-inside-out,Inside Out,2015,Pixar,81.0,69,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+pixar-the-good-dinosaur,The Good Dinosaur,2015,Pixar,67.0,70,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+disney-zootopia,Zootopia,2016,Disney,80.0,71,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+disney-moana,Moana,2016,Disney,76.0,72,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+pixar-finding-dory,Finding Dory,2016,Pixar,72.0,73,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+pixar-cars-3,Cars 3,2017,Pixar,67.0,74,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+pixar-coco,Coco,2017,Pixar,84.0,75,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+disney-ralph-breaks-the-internet,Ralph Breaks the Internet,2018,Disney,70.0,76,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+pixar-incredibles-2,Incredibles 2,2018,Pixar,75.0,77,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+pixar-toy-story-4,Toy Story 4,2019,Pixar,77.0,78,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+disney-frozen-2,Frozen II,2019,Disney,68.0,79,explicit_title_alias_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+pixar-onward,Onward,2020,Pixar,74.0,80,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+pixar-soul,Soul,2020,Pixar,80.0,81,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+disney-raya-and-the-last-dragon,Raya and the Last Dragon,2021,Disney,73.0,82,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+disney-encanto,Encanto,2021,Disney,72.0,83,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+pixar-luca,Luca,2021,Pixar,74.0,84,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+disney-strange-world,Strange World,2022,Disney,57.0,85,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+pixar-lightyear,Lightyear,2022,Pixar,61.0,86,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+pixar-turning-red,Turning Red,2022,Pixar,70.0,87,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+disney-wish,Wish,2023,Disney,56.0,88,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+pixar-elemental,Elemental,2023,Pixar,70.0,89,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+pixar-inside-out-2,Inside Out 2,2024,Pixar,78.0,90,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+disney-moana-2,Moana 2,2024,Disney,66.0,91,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+disney-zootopia-2,Zootopia 2,2025,Disney,74.0,92,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19
+pixar-elio,Elio,2025,Pixar,66.0,93,normalized_title_year_studio,user-jmp-ids-009,IDS_009.jmp,5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99,2026-11-19

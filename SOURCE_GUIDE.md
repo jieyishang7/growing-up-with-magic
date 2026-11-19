@@ -92,3 +92,11 @@ Before analysis, check review counts per film, available fields, missing values,
 ## November 12 implementation addendum
 
 Current research question, annotation definitions, source hierarchy and IMDb-only import workflow are documented in [METHODOLOGY.md](METHODOLOGY.md). Current computed coverage and limitations are in [IMPLEMENTATION_REPORT.md](IMPLEMENTATION_REPORT.md) and [analysis/atlas_validation.json](analysis/atlas_validation.json). The earlier prospective source list is preserved as historical research context; it is not the app's acquisition policy. No TMDB review integration or excluded-platform ratings were added.
+
+## November 19 user supplied JMP supplement
+
+`IDS_009.jmp` was supplied by the user on November 19, 2026. Its upstream publisher, redistribution licence, rating observation dates, IMDb title IDs, vote counts and IMDb scale were not supplied. The local original is not copied into this repository. Only movie title, year, studio and the IMDb-labelled raw column were extracted into `data/raw/user_jmp_imdb.csv`; other worksheet measures are excluded.
+
+The read-only decoder is [jumpio](https://github.com/abardagjy/jumpio), pinned to commit `e9cf1b85016637f90cbfca0760ded736475d20c1`; its JSL properties are not executed. `analysis/import_jmp_supplement.py` records the original SHA-256 and source row numbers. All 93 identities match by title, year and studio, including the explicit alias Frozen II to Frozen 2. This covers 64 Disney Animation and 29 Pixar films through 2025.
+
+Raw IMDb-labelled values range from 54 to 85. Dividing by ten produces plausible candidates, but this scale is inferred and unconfirmed. These are supplementary records, not verified ratings: `averageRating`, vote counts, source scale, title IDs and observation dates remain null. The film notes display both the raw value and the clearly labelled candidate. Rating charts and the primary 31-film snapshot remain unchanged. Among 29 overlaps, four candidate values differ from the existing snapshot; unknown observation dates prevent interpreting those differences as a time trend. See `analysis/jmp_validation.json` and `sources/user_jmp_import.json`.

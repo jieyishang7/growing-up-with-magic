@@ -44,6 +44,25 @@ def build():
             assert r['film_id'] in ids and re.fullmatch(r'tt\d+',r['imdb_id'])
             assert 0<=float(r['averageRating'])<=10 and int(r['numVotes'])>=0
         ratings=[r for r in ratings if r['film_id'] not in refreshed]+updates
+    # User worksheet imports remain supplemental until source, scale, IDs and date are checked.
+    supplemental=[]
+    supplement_path=ROOT/'data/raw/user_jmp_imdb.csv'
+    if supplement_path.exists():
+        source_manifest=json.loads((ROOT/'sources/user_jmp_import.json').read_text())
+        seen=set()
+        for row in read('data/raw/user_jmp_imdb.csv'):
+            assert row['film_id'] in ids and row['film_id'] not in seen
+            assert row['source_sha256']==source_manifest['source_sha256']
+            seen.add(row['film_id'])
+            raw=float(row['imdb_raw']) if row['imdb_raw'] else None
+            assert raw is None or 10<raw<=100
+            supplemental.append(dict(film_id=row['film_id'],imdb_raw=raw,candidate_averageRating=raw/10 if raw is not None else None,averageRating=None,numVotes=None,imdb_id=None,observed_at=None,source_scale=None,scale_status='inferred_divide_by_10_not_confirmed',review_status='user_supplied_unverified',source_file=row['source_file'],source_id=row['source_id'],source_row=int(row['source_row']),source_sha256=row['source_sha256'],snapshot_acquired=row['snapshot_acquired'],source_url=None,identity_match=row['identity_match']))
+        assert len(supplemental)==source_manifest['extracted_rows']
+        write('data/processed/imdb_supplemental.csv',supplemental)
+        primary={r['film_id']:r for r in ratings}
+        overlaps=[r for r in supplemental if r['film_id'] in primary]
+        audit=dict(rows=len(supplemental),matched_films=len(seen),studios=dict(Counter(f['studio'] for f in films if f['id'] in seen)),overlap_with_primary=len(overlaps),differing_candidates=sum(abs(r['candidate_averageRating']-float(primary[r['film_id']]['averageRating']))>.001 for r in overlaps),films_without_supplement=[f['id'] for f in films if f['id'] not in seen],primary_overwritten=0,eligible_for_primary_ratings=False,review_status='user_supplied_unverified')
+        (ROOT/'analysis/jmp_validation.json').write_text(json.dumps(audit,indent=2)+'\n')
     write('data/processed/films_master.csv',films)
     write('data/processed/imdb_ratings.csv',ratings)
     for f in films:
@@ -51,10 +70,13 @@ def build():
         f['life_stages']=[r for r in tables['film_life_stages'] if r['film_id']==f['id']]
         f['relationships']=[r for r in tables['film_relationships'] if r['film_id']==f['id']]
         f['rating']=next((r for r in ratings if r['film_id']==f['id']),None)
+        f['supplementary_rating']=next((r for r in supplemental if r['film_id']==f['id']),None)
         f['annotation_status']='partial_source_checked_pending_human' if f['themes'] else 'uncoded'
     coverage={'films':len(films),'studios':dict(Counter(f['studio'] for f in films)),'theme_films':sum(bool(f['themes']) for f in films),'life_stage_films':sum(bool(f['life_stages']) for f in films),'relationship_films':sum(bool(f['relationships']) for f in films),'rating_films':len(ratings),'human_reviewed_theme_films':len({r['film_id'] for r in tables['film_themes'] if r['review_status']=='human_reviewed'}),'imdb_id_films':sum(bool(r['imdb_id']) for r in ratings)}
+    coverage['supplementary_rating_films']=len(supplemental)
+    coverage['verified_supplementary_rating_films']=0
     manifest={str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted((ROOT/'data').rglob('*.csv'))}
-    atlas={'films':films,'themes':themes,'life_stages':stages,'coverage':coverage,'built_as_of':'2026-11-12','method_version':'1.0','input_sha256':manifest}
+    atlas={'films':films,'themes':themes,'life_stages':stages,'coverage':coverage,'built_as_of':'2026-11-19','method_version':'1.1','input_sha256':manifest}
     for p in ['public/atlas.json','data/processed/atlas.json']:(ROOT/p).write_text(json.dumps(atlas,ensure_ascii=False,indent=2)+'\n')
     (ROOT/'analysis/atlas_validation.json').write_text(json.dumps({'coverage':coverage,'checks':{'unique_ids':True,'foreign_keys':True,'evidence_required':True,'rating_ranges':True},'input_sha256':manifest},indent=2)+'\n')
     print(json.dumps(coverage,indent=2))

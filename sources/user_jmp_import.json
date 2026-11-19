@@ -1,0 +1,28 @@
+{
+  "source_id": "user-jmp-ids-009",
+  "source_file": "IDS_009.jmp",
+  "source_sha256": "5a741aa0c49bca66097408c74317ac958456b6719a75e4c3189c5e9f758fbb99",
+  "acquired_at": "2026-11-19",
+  "source_rows": 93,
+  "extracted_rows": 93,
+  "selected_columns": [
+    "Movie",
+    "Year",
+    "Studio",
+    "IMDb"
+  ],
+  "upstream_source": null,
+  "observed_at": null,
+  "imdb_title_ids": null,
+  "vote_counts": null,
+  "source_scale": null,
+  "scale_interpretation": "raw / 10 is an unconfirmed candidate; raw values remain authoritative to this file",
+  "review_status": "user_supplied_unverified",
+  "reader": {
+    "repository": "https://github.com/abardagjy/jumpio",
+    "commit": "e9cf1b85016637f90cbfca0760ded736475d20c1",
+    "read_only": true
+  },
+  "original_binary_redistributed": false,
+  "excluded_measures": "All other worksheet columns are excluded from the atlas"
+}
