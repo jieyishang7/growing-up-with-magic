@@ -1,4 +1,5 @@
 import React from 'react';
+import './AudienceRecords.css';
 
 export function AudienceRecords({film}) {
   const primary=film.rating;
